@@ -33,6 +33,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content:'\00A0\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-width: 150px;
@@ -43,7 +47,7 @@ header {
     header > h1 {
     color: white;
     font-family: var(--font-destaque);
-    font-size: 3em;
+    font-size: 3em;font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
@@ -52,10 +56,14 @@ header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
-    max-width: 500px;
+
+    
+    max-width: 600px;
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 
 nav {
@@ -65,7 +73,7 @@ nav {
 }
 
 nav > a {
-    color: white;
+    color: var(--cor1);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -94,12 +102,15 @@ main {
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
     font-size: 1.3em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1),transparent);
     text-indent: 8px;
 }
@@ -137,11 +148,27 @@ main img.pequena {
     margin: auto;
 }
 
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
-box-shadow: 3px 3px 8px black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 
 aside > h3 {
