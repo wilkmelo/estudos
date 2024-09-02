@@ -18,7 +18,7 @@
     --cor5: #063d1e;
     
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --font-destaque: "Bebas Neue", 'cursive';
+    --font-destaque: 'Bebas Neue', 'cursive';
     --fonte-android: 'Android', 'cursive';
     
 }
@@ -195,9 +195,10 @@ footer {
 color: white;
 font-weight: bold;
 text-decoration: none;
+background-color: black;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--cor1);
 }
