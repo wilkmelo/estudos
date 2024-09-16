@@ -19,9 +19,19 @@
             padding:10px ;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -30,6 +40,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -38,24 +49,25 @@
             TR, TD, TH
     -->
     <table>
+        <CAption>População das Unidades Federativas</CAption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
           <tr>
             <td>São Paulo</td>
-            <td class="nun">45.919.049</td>
+            <td class="num">45.919.049</td>
           </tr>   
           <tr>
             <td>Minas Gerais</td>
-            <td class="nun">21.168.791</td>
+            <td class="num">21.168.791</td>
           </tr>
           <tr>
             <td>Rio de Janeiro</td>
-            <td class="nun">17.264.943</td>
+            <td class="num">17.264.943</td>
           </tr>
           <tr>
             <td>Bahia</td>
@@ -156,8 +168,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>210.147.125</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
